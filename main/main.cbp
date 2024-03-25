@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="main" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/main" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add option="-DSFML_STATIC" />
+					<Add directory="SFML/include" />
+					<Add directory="include" />
+				</Compiler>
+				<Linker>
+					<Add library="sfml-audio" />
+					<Add directory="SFML/lib" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/main" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add directory="include" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add directory="SFML/include" />
+		</Compiler>
+		<Linker>
+			<Add library="sfml-graphics" />
+			<Add library="sfml-window" />
+			<Add library="sfml-system" />
+			<Add directory="SFML/lib" />
+		</Linker>
+		<Unit filename="Clases/Menu/Aplicacion.cpp" />
+		<Unit filename="Clases/Menu/Menu.cpp" />
+		<Unit filename="Clases/Menu/MenuNivel.cpp" />
+		<Unit filename="Clases/Menu/Transicion.cpp" />
+		<Unit filename="include/Anonymous.h" />
+		<Unit filename="include/Aplicacion.h" />
+		<Unit filename="include/Archivos.h" />
+		<Unit filename="include/ArchivosEditor.h" />
+		<Unit filename="include/EasterEgg.h" />
+		<Unit filename="include/Gameplay.h" />
+		<Unit filename="include/Gusavirus.h" />
+		<Unit filename="include/IconoSalir.h" />
+		<Unit filename="include/Keyword.h" />
+		<Unit filename="include/Leo.h" />
+		<Unit filename="include/Menu.h" />
+		<Unit filename="include/MenuNivel.h" />
+		<Unit filename="include/Nivel.h" />
+		<Unit filename="include/Score.h" />
+		<Unit filename="include/Transicion.h" />
+		<Unit filename="include/Vida.h" />
+		<Unit filename="mani.cpp" />
+		<Unit filename="src/Anonymous.cpp" />
+		<Unit filename="src/Archivos.cpp" />
+		<Unit filename="src/ArchivosEditor.cpp" />
+		<Unit filename="src/EasterEgg.cpp" />
+		<Unit filename="src/Gameplay.cpp" />
+		<Unit filename="src/Gusavirus.cpp" />
+		<Unit filename="src/IconoSalir.cpp" />
+		<Unit filename="src/Keyword.cpp" />
+		<Unit filename="src/Leo.cpp" />
+		<Unit filename="src/Nivel.cpp" />
+		<Unit filename="src/Score.cpp" />
+		<Unit filename="src/Vida.cpp" />
+		<Extensions>
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
